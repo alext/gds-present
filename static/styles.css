@@ -51,8 +51,6 @@ body {
   margin-left: -450px;
   margin-top: -350px;
 
-  padding: 40px 60px;
-
   box-sizing: border-box;
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -79,8 +77,6 @@ body {
 .slides.layout-faux-widescreen > article {
   margin-left: -550px;
   width: 1100px;
-
-  padding: 40px 160px;
 }
 
 .slides.layout-widescreen > article:not(.nobackground):not(.biglogo),
@@ -220,6 +216,36 @@ body {
   line-height: 36px;
 
   letter-spacing: -1px;
+  padding-top: 4%;
+}
+
+.slides > article > :not(footer) {
+  padding-left: 6%;
+}
+
+.slides > article:first-of-type,
+.slides > article:last-of-type {
+  padding-top: 8%;
+}
+
+.slides > article > footer {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 118, 192);
+  color: #fff;
+  padding: 12px 3%;
+  font-size: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slides > article > footer > .author_name {
+  float: left;
+  margin-right: 1rem;
+}
+
+.slides > article > footer > .org_name {
+  float: right;
 }
 
 b {
