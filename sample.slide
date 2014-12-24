@@ -1,0 +1,41 @@
+Presentation title
+Presentation subtitle
+2 Jan 2006
+Tags: foo, bar, baz
+
+Author Name
+Job title, Government Digital Service
+@twitter_name
+
+* Title of slide or section (must have asterisk)
+
+Some text
+
+* Another slide
+
+- bullets
+- more bullets
+- and then some
+
+* And another slide
+
+  Preformatted text
+  is indented (however you like)
+
+* Next slide
+
+You can use functions such as:
+
+  .code x.go /^func main/,/^}/
+  .play y.go
+  .image image.jpg
+  .iframe http://foo
+  .link http://foo label
+  .html file.html
+  .caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
+
+* More info
+
+See documentation on file format in the [[http://godoc.org/golang.org/x/tools/present][present package]]
+
+* Thank you
