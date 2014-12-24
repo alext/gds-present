@@ -15,6 +15,14 @@
 
       <article>
         <img class='logo' src='/static/cabinet-office-logo.svg'>
+        {{range .Authors}}
+          <div class="presenter">
+            {{range .Elem}}{{elem $.Template .}}{{end}}
+          </div>
+        {{end}}
+      </article>
+
+      <article>
         <h1>{{.Title}}</h1>
         {{with .Subtitle}}<h2>{{.}}</h2>{{end}}
         {{if not .Time.IsZero}}<h3>{{.Time.Format "2 January 2006"}}</h3>{{end}}
