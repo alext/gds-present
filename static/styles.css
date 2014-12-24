@@ -348,8 +348,8 @@ pre {
 }
 
 article > .image {
-  	text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 table {
@@ -429,13 +429,13 @@ div.output .buttons {
 
 /* Presenter details */
 .presenter {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 .presenter p,
 .presenter .link {
-    font-size: 3rem;
-    margin: 0;
-    line-height: 130%;
+  font-size: 3rem;
+  margin: 0;
+  line-height: 130%;
 }
 
 .logo {
