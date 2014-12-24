@@ -423,6 +423,11 @@ div.output .buttons {
 	line-height: 1.2em;
 }
 
+.logo {
+  width: 68%;
+  height: auto;
+}
+
 /* Output resize details */
 .ui-resizable-handle {
   position: absolute;

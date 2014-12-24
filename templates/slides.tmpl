@@ -14,6 +14,7 @@
     <section class='slides layout-widescreen'>
 
       <article>
+        <img class='logo' src='/static/cabinet-office-logo.svg'>
         <h1>{{.Title}}</h1>
         {{with .Subtitle}}<h3>{{.}}</h3>{{end}}
         {{if not .Time.IsZero}}<h3>{{.Time.Format "2 January 2006"}}</h3>{{end}}
@@ -38,7 +39,7 @@
   {{end}}{{/* of Slide block */}}
 
       <article>
-        <h3>Thank you</h1>
+        <img class='logo' src='/static/cabinet-office-logo.svg'>
         {{range .Authors}}
           <div class="presenter">
             {{range .Elem}}{{elem $.Template .}}{{end}}
