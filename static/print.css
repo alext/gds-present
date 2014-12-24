@@ -23,6 +23,8 @@ body {
 
   text-shadow: none; /* disable shadow */
 
+  background: none;
+
   display: block !important;
   transform: translate(0) !important;
   -o-transform: translate(0) !important;
