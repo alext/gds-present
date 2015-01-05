@@ -219,7 +219,7 @@ body {
 }
 
 .slides > article > :not(footer) {
-  padding-left: 6%;
+  padding: 0 6%;
 }
 
 .slides > article:first-of-type,
