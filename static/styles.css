@@ -64,11 +64,6 @@ body {
   width: 1100px;
 }
 
-.slides.layout-widescreen > article:not(.nobackground):not(.biglogo),
-.slides.layout-faux-widescreen > article:not(.nobackground):not(.biglogo) {
-  background-position-x: 0, 840px;
-}
-
 /* Clickable/tappable areas */
 
 .slide-area {
