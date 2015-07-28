@@ -53,6 +53,7 @@ body {
   -webkit-box-sizing: border-box;
 
   background-color: #e6e6e6;
+}
 .slides.layout-widescreen > article {
   margin-left: -550px;
   width: 1100px;
