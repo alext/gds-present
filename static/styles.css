@@ -16,11 +16,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 
-  background: rgb(215, 215, 215);
-  background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+  background: #000;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -56,19 +52,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  border-radius: 10px;
-  -o-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-
   background-color: #e6e6e6;
-
-  border: 1px solid rgba(0, 0, 0, .3);
-
-  transition: transform .3s ease-out;
-  -o-transition: -o-transform .3s ease-out;
-  -moz-transition: -moz-transform .3s ease-out;
-  -webkit-transition: -webkit-transform .3s ease-out;
 }
 .slides.layout-widescreen > article {
   margin-left: -550px;
@@ -77,11 +61,6 @@ body {
 .slides.layout-faux-widescreen > article {
   margin-left: -550px;
   width: 1100px;
-}
-
-.slides.layout-widescreen > article:not(.nobackground):not(.biglogo),
-.slides.layout-faux-widescreen > article:not(.nobackground):not(.biglogo) {
-  background-position-x: 0, 840px;
 }
 
 /* Clickable/tappable areas */
@@ -127,80 +106,19 @@ body {
   display: none;
 }
 .slides > article.far-past {
-  display: block;
-  transform: translate(-2040px);
-  -o-transform: translate(-2040px);
-  -moz-transform: translate(-2040px);
-  -webkit-transform: translate3d(-2040px, 0, 0);
+  display: none;
 }
 .slides > article.past {
-  display: block;
-  transform: translate(-1020px);
-  -o-transform: translate(-1020px);
-  -moz-transform: translate(-1020px);
-  -webkit-transform: translate3d(-1020px, 0, 0);
+  display: none;
 }
 .slides > article.current {
   display: block;
-  transform: translate(0);
-  -o-transform: translate(0);
-  -moz-transform: translate(0);
-  -webkit-transform: translate3d(0, 0, 0);
 }
 .slides > article.next {
-  display: block;
-  transform: translate(1020px);
-  -o-transform: translate(1020px);
-  -moz-transform: translate(1020px);
-  -webkit-transform: translate3d(1020px, 0, 0);
+  display: none;
 }
 .slides > article.far-next {
-  display: block;
-  transform: translate(2040px);
-  -o-transform: translate(2040px);
-  -moz-transform: translate(2040px);
-  -webkit-transform: translate3d(2040px, 0, 0);
-}
-
-.slides.layout-widescreen > article.far-past,
-.slides.layout-faux-widescreen > article.far-past {
-  display: block;
-  transform: translate(-2260px);
-  -o-transform: translate(-2260px);
-  -moz-transform: translate(-2260px);
-  -webkit-transform: translate3d(-2260px, 0, 0);
-}
-.slides.layout-widescreen > article.past,
-.slides.layout-faux-widescreen > article.past {
-  display: block;
-  transform: translate(-1130px);
-  -o-transform: translate(-1130px);
-  -moz-transform: translate(-1130px);
-  -webkit-transform: translate3d(-1130px, 0, 0);
-}
-.slides.layout-widescreen > article.current,
-.slides.layout-faux-widescreen > article.current {
-  display: block;
-  transform: translate(0);
-  -o-transform: translate(0);
-  -moz-transform: translate(0);
-  -webkit-transform: translate3d(0, 0, 0);
-}
-.slides.layout-widescreen > article.next,
-.slides.layout-faux-widescreen > article.next {
-  display: block;
-  transform: translate(1130px);
-  -o-transform: translate(1130px);
-  -moz-transform: translate(1130px);
-  -webkit-transform: translate3d(1130px, 0, 0);
-}
-.slides.layout-widescreen > article.far-next,
-.slides.layout-faux-widescreen > article.far-next {
-  display: block;
-  transform: translate(2260px);
-  -o-transform: translate(2260px);
-  -moz-transform: translate(2260px);
-  -webkit-transform: translate3d(2260px, 0, 0);
+  display: none;
 }
 
 /* Styles for slides */
@@ -219,7 +137,8 @@ body {
 }
 
 .slides > article > :not(footer) {
-  padding: 0 6%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .slides > article:first-of-type,
@@ -311,7 +230,7 @@ h3 {
 
   font-weight: 300;
 
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 
   color: rgb(51, 51, 51);
 }
